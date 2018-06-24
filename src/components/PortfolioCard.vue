@@ -34,7 +34,14 @@ export default {
 </script>
 
 <style scoped>
+img {
+  max-height: 150px;
+}
 
+.card {
+  height:350px;
+  max-height:350px;
+}
 .badges {
   height: 80px;
 }

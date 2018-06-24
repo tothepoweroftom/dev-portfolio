@@ -17,18 +17,32 @@
         <b-row>
             <img :src="project.cardImage" class="img-project"/>
 
-            <h3 class="text-uppercase" style="margin:30px;">{{project.name}}</h3>
 
         </b-row>
-        <b-row>
+        <b-row style="margin-top:50px;">
 
         <b-col md="9">
-                                <span v-html="this.project.details"></span>
-
+                        <h3 class="text-uppercase" >{{project.name}}</h3>
             <div v-if="project.github != ''">
-                <h5><a :href="project.github">Github</a></h5>
+                <a  target="_blank" :href="project.github">Github</a>
 
             </div>
+                   <div v-if="project.link != ''">
+                <a target="_blank" :href="project.link">Website</a>
+
+            </div>
+            <p></p>
+            <span v-html="this.project.details"></span>
+
+            <b-row>
+                <b-col v-if="project.images" cols="12" sm="6" md="4" v-for="(image, index) in project.images" :key="index" >
+
+                    <img :src="image" class="images"/>
+                </b-col>
+                
+            </b-row>
+
+
         </b-col>
 
         <b-col md="3">
@@ -79,9 +93,15 @@ export default {
 <style scoped>
 .img-project {
     width: 80%;
+    height:40%;
     padding-top: 70px;
     margin: 0px auto;
-    height:40%;
+    left:0px;
+}
+.images {
+    width: 80%;
+    padding-top: 70px;
+    margin: 0px auto;
     left:0px;
 }
 </style>
