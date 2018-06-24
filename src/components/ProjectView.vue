@@ -10,7 +10,7 @@
         </div>
     </div> -->
     <!-- end Preloader -->
-<div class="container" style="text-align: left">
+<div class="container" style="text-align: left; margin-bottom:50px;">
         <b-button variant="outline-secondary" style="border: 0px; font-size: 30px; position:absolute; top:20px; left:20px; z-index:40;" @click="goBack"><i class="fa fa-arrow-left"></i></b-button>
 
 
@@ -25,7 +25,10 @@
         <b-col md="9">
                                 <span v-html="this.project.details"></span>
 
+            <div v-if="project.github != ''">
+                <h5><a :href="project.github">Github</a></h5>
 
+            </div>
         </b-col>
 
         <b-col md="3">
@@ -76,7 +79,7 @@ export default {
 <style scoped>
 .img-project {
     width: 80%;
-    padding-top: 50px;
+    padding-top: 70px;
     margin: 0px auto;
     height:40%;
     left:0px;

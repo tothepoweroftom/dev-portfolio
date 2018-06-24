@@ -13,7 +13,7 @@
 
 
         <!-- Top bar -->
-        <b-row style="">
+        <b-row style="margin-top: 50px;">
           <b-col cols="12">
 
             <h1 style="font-weight: 700;  ">Tom Power</h1>
@@ -47,26 +47,29 @@
 
       <b-row style="margin-top:50px">
 
-        <div class="portfolio" style="padding-left:20px">        
+        <div class="portfolio" style="padding-left:40px">        
           
             <h2 style="text-align:left"> Portfolio</h2>
 
                 <!-- portfolio_filter -->
                 <div class="">
                         <ul class="">
-                            <li><b-btn class="portfolio-btn ">All</b-btn></li>
-                            <li><b-btn class="portfolio-btn">Web</b-btn></li>
-                            <li><b-btn class="portfolio-btn">iOS</b-btn></li>
-                            <li><b-btn class="portfolio-btn">Physical</b-btn></li>
+                            <li><b-btn class="portfolio-btn" @click="sortCards(0)">All</b-btn></li>
+                            <li><b-btn class="portfolio-btn" @click="sortCards(1)">Web</b-btn></li>
+                            <li><b-btn class="portfolio-btn" @click="sortCards(2)">iOS</b-btn></li>
+                            <li><b-btn class="portfolio-btn" @click="sortCards(3)">Creative</b-btn></li>
                         </ul>
                     </nav>
                 </div>
         </div>
       </b-row>
-      <b-row>
+      <b-row style="padding-left:40px">
           <b-card-group>
                     <!-- single work -->
-                    <portfolio-card v-for="(project, index) in projects" :key="index" :project="project"></portfolio-card>
+                    <!-- <transition-group name="fade" tag="li"> -->
+
+                    <portfolio-card v-for="(project, index) in filtered" :key="index" :project="project"></portfolio-card>
+                    <!-- </transition-group> -->
           </b-card-group>
 
 
@@ -97,11 +100,36 @@ export default {
       msg: 'Welcome to Your Vue.js App',
       showLoader: true,
       projects: Projects.projects,
+      filtered: [],
     }
   },
 
   methods:{ 
-    handleMenu() {}
+    sortCards(value) {
+      if (value === 0){
+        this.filtered = this.projects;
+      } else {
+        this.filtered = [];
+        this.projects.forEach((el) => {
+          if (el.type === value) {
+            this.filtered.push(el);
+          }
+        })
+      }
+
+      
+    },
+
+    createFilterStructure(id, args, func) {
+        return {id, args, func};
+    },
+    addFilterFunction(id, args, func) {
+        this.filter.push(this.createFilterStructure(id, args, func));
+    }
+  },
+
+  created() {
+    this.filtered = this.projects;
   },
 
   mounted() {
