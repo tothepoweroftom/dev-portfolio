@@ -4,7 +4,7 @@ import Delaunay from './Delaunay'
 export default function( sketch ) {
 
     var allParticles = [];
-    var maxLevel = 4;
+    var maxLevel = 5;
     var useFill = true;
     
     var data = [];
@@ -14,7 +14,7 @@ export default function( sketch ) {
 
     sketch.setup = function() {
       width = document.getElementById('visualizer').clientWidth;
-      height = document.getElementById('visualizer').clientHeight;
+      height = document.getElementById('visualizer').clientHeight*2.5;
 
       sketch.createCanvas(width, height);
   
@@ -31,7 +31,7 @@ export default function( sketch ) {
        // Create fade effect.
        sketch.noStroke();
       if(counter <= 1000) {
-        sketch.fill(255, 0.8);
+        sketch.fill(255, 0.5);
         counter += 1;
         sketch.addParticles();
 
@@ -85,7 +85,7 @@ export default function( sketch ) {
           // Base its hue by the particle's life.
           if (useFill) {
             // sketch.noStroke();
-            sketch.stroke(200 + p1.life*4);
+            sketch.stroke(100 + p1.life*4);
 
             sketch.fill(240 +p1.life*4);
           } else {

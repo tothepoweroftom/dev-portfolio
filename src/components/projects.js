@@ -153,6 +153,29 @@ export default {
         link: "",
     },
 
+    // {
+    //     name: "Birdie Back iOS App",
+    //     type: [1],
+    //     tags: ["Swift", "XCode", "Front End", "Freelance"],
+    //     details: "<p>Birdie Back is a smart lumbar support for golfers. Using wearable technology to solve the needs of the players to give perfect posture and relieve back pain.  </p>",
+    //     cardImage: "/static/img/artificial.png",
+    //     images: ["/static/img/artificial1.png", "/static/img/artificial2.png", ],
+    //     github: "https://github.com/tothepoweroftom/BirdyBack",
+    //     link: "",
+    // },
+    
+    {
+        name: "Open Terra",
+        type: [1,3],
+        tags: ["Touchdesigner", "Processing", "openFrameworks", "Computer Vision", "Arduino", "Machine Learning"],
+        details: "<p>Open Terra is a map of hypothetical open source shipping data and it impact on the earth</p>"
+                    + "<p> It was build using a combination of technologies. ML4A convolutional neural net classifier for recognizing which fruit was placed under the camera, "+
+                    "Processing generated the shipping route visuals using a shipping dataset from the Dutch Government. Touchdesigner tied everything together and added Leap Motion control support</p>",
+        cardImage:"/static/img/kakushin/center.gif" ,
+        images: [ "/static/img/kakushin/right.gif", "/static/img/kakushin/DSCF3323.jpg"],
+        github: "",
+        link: "",
+    },
 
  ]
 

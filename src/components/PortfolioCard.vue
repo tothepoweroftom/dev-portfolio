@@ -3,7 +3,7 @@
 
     <b-card  :title="project.name" 
           :img-src="project.cardImage"
-          style="max-width: 20rem; margin:10px; border-radius:0px; text-align:left;"
+          style="max-width: 20rem; margin:10px; border-radius:0px; text-align:left; border: 0px;"
           class="mb-2"
           
     >
@@ -36,6 +36,7 @@ export default {
 <style scoped>
 img {
   max-height: 150px;
+  padding: 10px;
 }
 
 .card {
