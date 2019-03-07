@@ -35,13 +35,18 @@ export default {
 
 <style scoped>
 img {
-  max-height: 150px;
+  max-height: 250px;
+  height:50%;
   padding: 10px;
 }
 
 .card {
   height:350px;
   max-height:350px;
+}
+
+.card-image {
+  height:150px;
 }
 .badges {
   height: 80px;

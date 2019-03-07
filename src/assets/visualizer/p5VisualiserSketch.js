@@ -29,7 +29,7 @@ export default function( sketch ) {
     sketch.draw = function() {
 
        // Create fade effect.
-       sketch.noStroke();
+      //  sketch.noStroke();
       if(counter <= 1000) {
         sketch.fill(255, 0.5);
         counter += 1;
@@ -47,7 +47,7 @@ export default function( sketch ) {
       for (var i = allParticles.length-1; i > -1; i--) {
         allParticles[i].move(allParticles);
         
-        if (allParticles[i].vel.mag() < 0.01) {
+        if (allParticles[i].vel.mag() < 0.1) {
           allParticles.splice(i, 1);
         }
       }

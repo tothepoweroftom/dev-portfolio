@@ -117,7 +117,7 @@ export default {
         tags: ["Vue", "Client", "Framework 7", "Mobile PWA App"],
         details: "<p> Built a PWA app for the portfolio survey team within Arcadis. A PWA Vue app was developed which interacted with Arcadis data to improve their workflows. Framework 7 was used to provide a native-like look and feel to the application.</p>",
         cardImage: "/static/img/arcadis.jpg",
-        images: [],
+        images: ["/static/img/arcadisredac.png"],
         github: "",
         link: ""
     },
@@ -127,7 +127,7 @@ export default {
         tags: ["Vue", "Client", "d3js", "Mobile PWA App"],
         details: "<p> Built a POC web app for Vodafone Ziggo for their IOT Smart Home department. The app featured d3js which was used for data visualisation relating to energy consumption. </p>",
         cardImage: "/static/img/vodafone.png",
-        images: [],
+        images: ["/static/img/vodafoneziggo.png", "/static/img/vodafoneziggo2.png"],
         github: "",
         link: ""
     },
@@ -166,17 +166,43 @@ export default {
     
     {
         name: "Open Terra",
-        type: [1,3],
+        type: [3],
         tags: ["Touchdesigner", "Processing", "openFrameworks", "Computer Vision", "Arduino", "Machine Learning"],
         details: "<p>Open Terra is a map of hypothetical open source shipping data and it impact on the earth</p>"
-                    + "<p> It was build using a combination of technologies. ML4A convolutional neural net classifier for recognizing which fruit was placed under the camera, "+
+                    + "<p> It was built using a combination of technologies. ML4A convolutional neural net classifier for recognizing which fruit was placed under the camera, "+
                     "Processing generated the shipping route visuals using a shipping dataset from the Dutch Government. Touchdesigner tied everything together and added Leap Motion control support</p>",
         cardImage:"/static/img/kakushin/center.gif" ,
         images: [ "/static/img/kakushin/right.gif", "/static/img/kakushin/DSCF3323.jpg"],
         github: "",
         link: "",
     },
+    {
+        name: "Heartbeat Miner",
+        type: [3],
+        tags: ["PureData", "Processing", "openFrameworks", "Arduino", "Machine Learning"],
+        details: "<p>Heartbeat Miner is an art installation that explores blockchain and health sensors.</p>"
+                    + "<p> The installation consisted of an arduino heartbeat and blood oxygenation sensor housed in a laser cut box. "+
+                    "A health value was calculated from the heart data to gather a baseline health metric from the participant. This health score then was logged on a Hyperledger Fabric blockchain and healthcoins were released to the user. </p>" +
+                    "<p> The project was meant as an artistic framing of a what if question, if we chased good health and happiness instead of money.</p>",
+        cardImage:"/static/img/kakushin/cover.png" ,
+        images: [ "/static/img/kakushin/box.jpg", "/static/img/kakushin/hand.jpg"],
+        github: "",
+        link: "",
+    },
 
+    {
+        name: "Meditation VR",
+        type: [1,3],
+        tags: ["AFRAME", "Threejs", "Tonejs", "Music", "VR"],
+        details: "<p>Meditation VR is a meditative space created in AFrame, a WebVR platform from Mozilla.</p>"
+                    + "<p> This installation piece is also a shared VR space, leveraging websockets to synchronize the data between the VR apps."+
+                    "Each of the participants can see the other as a primitive shape in the space. Their head movements corresponding to their own navel gazing. </p>" +
+                    "<p> The artistic aim of the piece was to create a soothing shared virtual space that we can escape too in this busy world.</p>",
+        cardImage:"/static/img/meditationvr.gif" ,
+        images: [ "/static/img/meditationvr1.png", "/static/img/meditationvr2.png"],
+        github: "",
+        link: "",
+    },
  ]
 
 

@@ -30,10 +30,10 @@
             <div class="h-30"></div>
               <p>I don't believe in right/left brain dominance. I try and balance my mathematical and analytical mind with my creative and musical mind — tying together my Bachelor's degree in Theoretical Physics and Master's degree in Music & Media Technologies from Trinity College Dublin.</p>
               <p> My programming passion is front end development and Vue.js. For me its the closest programming comes to music. Its a technical and a creative challenge. Its about providing a great user experience. I love libraries like <strong> p5js, Tonejs</strong> and <strong>threejs</strong>. Tools which let us do so much with the blank website. </p>
+              <p> My current focus is on <strong>web</strong> development but I'm also proficient in <strong>iOS</strong> development. My scientific background lends itself to <strong>C++</strong> and <strong>Python</strong>. My music background lends itself to <strong>PureData, Max/MSP and Csound</strong>. Recently my focus has been on artistically using recent developments in Machine Learning, such as using LSTM's to generate poetry and using Posenet as a Microsoft Kinect replacement in interactive installations.</p>
+              <p> I'm also a musician and composer. Please stop by <a target="_blank" href="http://tothepoweroftom.com">tothepoweroftom.com</a> for music! </p>
 
-              <p> Currently I am working as a creative software developer for MOBGEN:Lab, part of Accenture Interactive. The role involves a large range of technologies from web, mobile, voice and VR. My specific focus is on <strong>Javascript and Web Development</strong>. But I also have strong proficiency with <strong>Python, C++ and Swift</strong> and experience with <strong>DSP</strong> and <strong>Machine Learning</strong>.
-
-              <p>I pride myself in quickly understanding complex new topics. Once you have understood and mastered Quantum Field Theory, everything else seems easier! Moving forward with my career I would like to continue improving my technical skills and contribute to something meaningful.</p>
+              <!-- <p>I pride myself in quickly understanding complex new topics. Once you have understood and mastered Quantum Field Theory, everything else seems easier! Moving forward with my career I would like to continue improving my technical skills and contribute to something meaningful.</p> -->
         </b-col>
         <b-col cols="12" sm="3">
               <ul class="social-ul">

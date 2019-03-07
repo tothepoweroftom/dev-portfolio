@@ -82,6 +82,10 @@
       this.project = this.$route.params.object;
 
     },
+
+    mounted() {
+      window.scrollTo(0,0);
+    },
     methods: {
       goBack() {
         this.$router.go(-1);
