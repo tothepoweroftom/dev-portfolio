@@ -203,6 +203,20 @@ export default {
         github: "",
         link: "",
     },
+
+    // {
+    //     name: "Dos Equis Google Home Skill",
+    //     type: [1],
+    //     tags: ["Google Home", "Node js"],
+    //     details: "<p>Meditation VR is a meditative space created in AFrame, a WebVR platform from Mozilla.</p>"
+    //                 + "<p> This installation piece is also a shared VR space, leveraging websockets to synchronize the data between the VR apps."+
+    //                 "Each of the participants can see the other as a primitive shape in the space. Their head movements corresponding to their own navel gazing. </p>" +
+    //                 "<p> The artistic aim of the piece was to create a soothing shared virtual space that we can escape too in this busy world.</p>",
+    //     cardImage:"/static/img/cerveza.png" ,
+    //     images: [],
+    //     github: "",
+    //     link: "",
+    // },
  ]
 
 

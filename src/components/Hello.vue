@@ -32,6 +32,7 @@
               <p> My programming passion is front end development and Vue.js. For me its the closest programming comes to music. Its a technical and a creative challenge. Its about providing a great user experience. I love libraries like <strong> p5js, Tonejs</strong> and <strong>threejs</strong>. Tools which let us do so much with the blank website. </p>
               <p> My current focus is on <strong>web</strong> development but I'm also proficient in <strong>iOS</strong> development. My scientific background lends itself to <strong>C++</strong> and <strong>Python</strong>. My music background lends itself to <strong>PureData, Max/MSP and Csound</strong>. Recently my focus has been on artistically using recent developments in Machine Learning, such as using LSTM's to generate poetry and using Posenet as a Microsoft Kinect replacement in interactive installations.</p>
               <p> I'm also a musician and composer. Please stop by <a target="_blank" href="http://tothepoweroftom.com">tothepoweroftom.com</a> for music! </p>
+              <p> Download a copy of my  <a href="static/pdf/Doc_Resume.pdf">resume here:</a></p>
 
               <!-- <p>I pride myself in quickly understanding complex new topics. Once you have understood and mastered Quantum Field Theory, everything else seems easier! Moving forward with my career I would like to continue improving my technical skills and contribute to something meaningful.</p> -->
         </b-col>
